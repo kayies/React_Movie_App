@@ -34,7 +34,6 @@ class App extends Component {
     return movies;
   };
 
- 
 
   _callApi = () => {
     return fetch(
