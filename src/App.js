@@ -53,7 +53,23 @@ class App extends Component {
     });
     return movies;
   };
+<<<<<<< HEAD
  
+=======
+
+
+  // ㅇㅇㅇ
+
+  _callApi = () => {
+    return fetch(
+      "https://yts.am/api/v2/list_movies.json?sort_by=rating"
+    )
+      .then(potato => potato.json())
+      .then(json => json.data.movies)
+      .catch(err => console.log(err));
+  };
+
+>>>>>>> master
   render() {
     const { movies } = this.state;
     return (
